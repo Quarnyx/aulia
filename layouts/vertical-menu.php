@@ -94,7 +94,7 @@
                     </a>
                     <ul class="sub-menu" aria-expanded="false">
                         <li>
-                            <a href="apps-calendar.php">
+                            <a href="?page=pengguna">
                                 <span data-key="t-calendar">Pengguna</span>
                             </a>
                         </li>
@@ -106,7 +106,7 @@
                         </li>
 
                         <li>
-                            <a href="">
+                            <a href="?page=supplier">
                                 <span data-key="t-email">Supplier</span>
                             </a>
                         </li>

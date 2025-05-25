@@ -92,7 +92,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <head>
 
-    <title>Login | Minia - Admin & Dashboard Template</title>
+    <title>Login | Aulia</title>
     <?php include 'layouts/head.php'; ?>
 
     <?php include 'layouts/head-style.php'; ?>
@@ -110,13 +110,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             <div class="mb-4 mb-md-5 text-center">
                                 <a href="index.php" class="d-block auth-logo">
                                     <img src="assets/images/logo-sm.svg" alt="" height="28"> <span
-                                        class="logo-txt">Minia</span>
+                                        class="logo-txt">Aulia</span>
                                 </a>
                             </div>
                             <div class="auth-content my-auto">
                                 <div class="text-center">
-                                    <h5 class="mb-0">Welcome Back !</h5>
-                                    <p class="text-muted mt-2">Sign in to continue to Minia.</p>
+                                    <h5 class="mb-0">Selamat Datang !</h5>
+                                    <p class="text-muted mt-2">Login untuk memulai sesi.</p>
                                 </div>
                                 <form class="mt-4 pt-2" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>"
                                     method="post">
