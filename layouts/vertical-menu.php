@@ -100,7 +100,7 @@
                         </li>
 
                         <li>
-                            <a href="apps-chat.php">
+                            <a href="?page=barang">
                                 <span data-key="t-chat">Barang</span>
                             </a>
                         </li>
