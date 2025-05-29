@@ -116,14 +116,14 @@
                 <li class="menu-title mt-2" data-key="t-components">Transaksi</li>
 
                 <li>
-                    <a href="javascript: void(0);">
+                    <a href="?page=barang-masuk">
                         <i data-feather="briefcase"></i>
                         <span data-key="t-components">Barang Masuk</span>
                     </a>
                 </li>
 
                 <li>
-                    <a href="javascript: void(0);">
+                    <a href="?page=barang-keluar">
                         <i data-feather="gift"></i>
                         <span data-key="t-ui-elements">Barang Keluar</span>
                     </a>
