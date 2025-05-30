@@ -25,6 +25,11 @@
                 <label for="harga_jual" class="form-label">Harga Jual</label>
                 <input type="number" class="form-control" name="harga_jual" id="harga_jual" placeholder="Harga Jual">
             </div>
+            <div class="col-md-6">
+                <label for="jenis_barang" class="form-label">Jenis Barang</label>
+                <input type="text" class="form-control" name="jenis_barang" id="jenis_barang"
+                    placeholder="Jenis Barang">
+            </div>
         </div>
     </div>
     <button type="submit" class="btn btn-primary mt-3">Simpan</button>

@@ -19,3 +19,6 @@
 <!-- App Css-->
 <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
 <script src="assets/libs/jquery/jquery.min.js"></script>
+
+<!-- apexcharts -->
+<script src="assets/libs/apexcharts/apexcharts.min.js"></script>

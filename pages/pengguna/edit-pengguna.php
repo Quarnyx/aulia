@@ -10,23 +10,32 @@ if ($result->num_rows > 0) {
     <input type="hidden" name="id" value="<?= $row['id_pengguna'] ?>">
     <div class="d-grid gap-3">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <div>
                     <label for="nama" class="form-label">Nama</label>
                     <input type="text" class="form-control " name="nama" id="nama" placeholder="Nama"
                         value="<?= $row['nama'] ?>">
                 </div>
-
-                <button type="submit" class="btn btn-primary mt-3">Simpan</button>
-
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <div>
                     <label for="username" class="form-label">Username</label>
                     <input type="text" class="form-control " name="username" id="username" placeholder="Username"
                         value="<?= $row['username'] ?>">
                 </div>
             </div>
+            <div class="col-md-4">
+                <label for="level" class="form-label">Level</label>
+                <select class="form-select" name="level" id="level">
+                    <option value="admin" <?php if ($row['level'] == "admin")
+                        echo "selected"; ?>>Admin</option>
+                    <option value="user" <?php if ($row['level'] == "user")
+                        echo "selected"; ?>>User</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary mt-3">Simpan</button>
 </form>
 <script>
     $("#form-edit").submit(function (e) {

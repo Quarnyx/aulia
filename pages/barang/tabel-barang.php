@@ -7,6 +7,7 @@
             <th>Satuan</th>
             <th>Harga Beli</th>
             <th>Harga Jual</th>
+            <th>Jenis Barang</th>
             <th>Aksi</th>
         </tr>
     </thead>
@@ -25,6 +26,7 @@
                 <td><?= $row['satuan'] ?></td>
                 <td>Rp <?= number_format($row['harga_beli'], 0, ',', '.') ?></td>
                 <td>Rp <?= number_format($row['harga_jual'], 0, ',', '.') ?></td>
+                <td><?= $row['jenis_barang'] ?></td>
                 <td>
                     <button id="edit" data-nama="<?= $row['nama_barang'] ?>" data-id="<?= $row['id_barang'] ?>"
                         class="btn btn-primary btn-sm">Edit</button>

@@ -63,8 +63,6 @@
 <!-- JAVASCRIPT -->
 <?php include 'layouts/vendor-scripts.php'; ?>
 
-<!-- apexcharts -->
-<script src="assets/libs/apexcharts/apexcharts.min.js"></script>
 
 <!-- Plugins js-->
 <script src="assets/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.min.js"></script>
@@ -86,9 +84,6 @@
 <!-- Responsive examples -->
 <script src="assets/libs/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
 <script src="assets/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
-
-<!-- dashboard init -->
-<script src="assets/js/pages/dashboard.init.js"></script>
 
 <!-- App js -->
 <script src="assets/js/app.js"></script>

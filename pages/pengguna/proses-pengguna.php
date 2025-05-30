@@ -34,7 +34,8 @@ switch ($_GET['aksi'] ?? '') {
         $id = $_POST['id'];
         $nama = $_POST['nama'];
         $username = $_POST['username'];
-        $sql = "UPDATE pengguna SET username = '$username', nama = '$nama' WHERE id_pengguna = '$id'";
+        $level = $_POST['level'];
+        $sql = "UPDATE pengguna SET username = '$username', nama = '$nama', level = '$level' WHERE id_pengguna = '$id'";
 
         $result = $link->query($sql);
         if ($result) {
@@ -48,7 +49,7 @@ switch ($_GET['aksi'] ?? '') {
         break;
     case 'ganti-password':
         $id = $_POST['id'];
-        $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
+        $password = md5($_POST['password']);
         $sql = "UPDATE pengguna SET password = '$password' WHERE id_pengguna = '$id'";
         $result = $link->query($sql);
         if ($result) {

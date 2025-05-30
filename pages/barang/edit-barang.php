@@ -49,6 +49,11 @@ if ($result->num_rows > 0) {
                         value="<?= $row['harga_jual'] ?>">
                 </div>
             </div>
+            <div class="col-md-6">
+                <label for="jenis_barang" class="form-label">Jenis Barang</label>
+                <input type="text" class="form-control" name="jenis_barang" id="jenis_barang" placeholder="Jenis Barang"
+                    value="<?= $row['jenis_barang'] ?>">
+            </div>
         </div>
     </div>
     <button type="submit" class="btn btn-primary mt-3">Simpan</button>

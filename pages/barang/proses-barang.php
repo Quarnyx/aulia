@@ -7,9 +7,10 @@ switch ($_GET['aksi'] ?? '') {
         $satuan = $_POST['satuan'];
         $harga_beli = $_POST['harga_beli'];
         $harga_jual = $_POST['harga_jual'];
+        $jenis_barang = $_POST['jenis_barang'];
 
-        $sql = "INSERT INTO barang (kode_barang, nama_barang, satuan, harga_beli, harga_jual) 
-                VALUES ('$kode_barang', '$nama_barang', '$satuan', '$harga_beli', '$harga_jual')";
+        $sql = "INSERT INTO barang (kode_barang, nama_barang, satuan, harga_beli, harga_jual, jenis_barang) 
+                VALUES ('$kode_barang', '$nama_barang', '$satuan', '$harga_beli', '$harga_jual', '$jenis_barang')";
         $result = $link->query($sql);
         if ($result) {
             echo 'ok';
@@ -28,13 +29,15 @@ switch ($_GET['aksi'] ?? '') {
         $satuan = $_POST['satuan'];
         $harga_beli = $_POST['harga_beli'];
         $harga_jual = $_POST['harga_jual'];
+        $jenis_barang = $_POST['jenis_barang'];
 
         $sql = "UPDATE barang SET 
                 kode_barang = '$kode_barang',
                 nama_barang = '$nama_barang',
                 satuan = '$satuan',
                 harga_beli = '$harga_beli',
-                harga_jual = '$harga_jual'
+                harga_jual = '$harga_jual',
+                jenis_barang = '$jenis_barang'
                 WHERE id_barang = '$id'";
 
         $result = $link->query($sql);

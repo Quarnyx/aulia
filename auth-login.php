@@ -51,9 +51,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 // Check if username exists, if yes then verify password
                 if (mysqli_stmt_num_rows($stmt) == 1) {
                     // Bind result variables
-                    mysqli_stmt_bind_result($stmt, $id_pengguna, $nama, $username, $level, $password);
+                    mysqli_stmt_bind_result($stmt, $id_pengguna, $nama, $username, $level, $password_md5);
                     if (mysqli_stmt_fetch($stmt)) {
-                        if ($password == $password) {
+                        if ($password == $password_md5) {
                             // Password is correct, so start a new session
                             session_start();
 
@@ -137,10 +137,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                             <input type="password" class="form-control" placeholder="Enter password"
                                                 name="password" value="123456" aria-label="Password"
                                                 aria-describedby="password-addon">
-                                            <span class="text-danger"><?php echo $password_err; ?></span>
                                             <button class="btn btn-light ms-0" type="button" id="password-addon"><i
                                                     class="mdi mdi-eye-outline"></i></button>
                                         </div>
+
+
+                                        <span class="text-danger"><?php echo $password_err; ?></span>
                                     </div>
                                     <div class="mb-3">
                                         <button class="btn btn-primary w-100 waves-effect waves-light" type="submit">Log
